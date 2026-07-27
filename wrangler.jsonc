@@ -2,7 +2,6 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "gambl-poker-fantomzone",
   "compatibility_date": "2026-05-15",
-  "compatibility_flags": ["nodejs_compat"],
   "routes": [
     {
       "pattern": "gambl-poker.fantomzone.app/*",
