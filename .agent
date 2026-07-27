@@ -1,0 +1,23 @@
+# Gambl Poker agent notes
+
+## Product source
+- Treat `poker-game-prd.md` as the source of truth for game modes and rules.
+- Build menu and table UI mobile-first. At 320px wide, all player cards, all five community-card positions, chip stacks, pot, prompt, and action controls must remain visible without horizontal scrolling.
+- Keep the visual language premium and casino-like: midnight blue, felt green, restrained gold, action red, and bright blue.
+
+## Gameplay contract
+- Hints are off by default.
+- Keep the dealer question or decision prompt visible while players are answering.
+- Preserve private CPU hole cards until showdown.
+- Use a standard 52-card deck and compare the best five-card combination at showdown.
+- Sound must be user-controlled and must never block gameplay.
+
+## Quality checks
+- Run `npm run build` and `npm test` before publishing.
+- Test menu navigation, CPU difficulty selection, all four betting rounds, showdown, tutorial steps, and 320px mobile layout.
+- Never describe room-code multiplayer as live until remote synchronization has been implemented and tested.
+
+## Release targets
+- Source repository: `git@github.com:workceostewart-lang/Gambl-Poker.git`
+- Game domain: `https://gambl-poker.fantomzone.app`
+- Add or retain a matching game card on the Fantom Zone homepage.
